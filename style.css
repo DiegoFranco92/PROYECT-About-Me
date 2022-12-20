@@ -48,7 +48,7 @@ body {
   padding: 45px 45px 70px 45px;
   display: inline-block;
   margin-right: 90px;
-  box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
+  box-shadow: 4px 4px 5px black;
 }
 
 .no-right-margin {
@@ -72,12 +72,10 @@ body {
 
 .footer {
   height: 300px;
-  background-color: black;
-   display: flex;
+  background-color: rgb(138, 122, 122);
+  display: flex;
 }
 
-.footer-author {
-  font-size: 24px;
-  color: white;
-  margin: auto;
+.footer-link {
+  color: white; 
 }
