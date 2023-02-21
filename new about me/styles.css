@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 body {
-    font-family: 'Unbounded', normal;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f2f2f2;
     text-align: center;
   }
@@ -10,7 +18,11 @@ body {
   header {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
     color: white;
-    padding: 1em;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .about-me-title {
@@ -47,20 +59,22 @@ body {
   }
 
   .edu-button {
-    margin-right: 30px;
+    margin-right: 35px;
   }
 
   .exp-button {
-    margin: 30px 30px;
+    margin: 35px 35px;
   }
 
   button {
     transition: all 0.5s ease;
     border-radius: 5px;
+    background-color: rgb(212, 210, 210);
   }
   
   button:hover {
     transform: scale(1.08);
+    background-color: rgb(255, 255, 255);
   }
   
 
@@ -70,23 +84,26 @@ body {
     padding: 1em;
   }
   
-  #about {
-    background-color: #f8f8f8;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  .subtitles {
+    font-size: 23px;
+  }
+
+  p {
+    font-size: 18px;
   }
   
-  #experience, #hobbies, #contact {
+  #about, #experience, #hobbies, #contact {
     background-color: #f8f8f8;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .footer {
     background: #C9CCD3;
-    background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
-    background-blend-mode: lighten;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
     text-align: center;
-    padding: 10px;
-    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-top: 25px;
     bottom: 0;
     width: 100%;
     text-shadow: 3px 3px 4px gray;
@@ -96,22 +113,27 @@ body {
     font-size: 13px;
   }
 
+  .copyright {
+    color: rgb(255, 255, 255);
+  }
+
   .social-media {
     display: flex;
     justify-content: center;
   }
   
   .social-media a {
-    font-size: 32px;
-    margin: 0 10px;
-    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin: 0 15px;
+    color: rgb(185, 185, 185);
     text-decoration: none;
     transition: all 0.3s;
+    animation: rotation 2s;
   }
 
   
   .social-media a:hover {
-    color: #000;
+    color: rgb(255, 255, 255);
     transform: translateY(-5px);
   }
   
