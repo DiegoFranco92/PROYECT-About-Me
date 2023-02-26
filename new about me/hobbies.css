@@ -60,6 +60,7 @@ body {
 
   .edu-button {
     margin-right: 35px;
+    margin-left: 35px;
   }
 
   .exp-button {
@@ -76,65 +77,3 @@ body {
     transform: scale(1.08);
     background-color: rgb(255, 255, 255);
   }
-  
-
-  section {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1em;
-  }
-  
-  .subtitles {
-    font-size: 23px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-  
-  #about, #experience, #hobbies, #contact {
-    background-color: #f8f8f8;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  .footer {
-    background: #C9CCD3;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    margin-top: 25px;
-    bottom: 0;
-    width: 100%;
-    text-shadow: 3px 3px 4px gray;
-  }
-  
-  .year {
-    font-size: 13px;
-  }
-
-  .copyright {
-    color: rgb(255, 255, 255);
-  }
-
-  .social-media {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .social-media a {
-    font-size: 35px;
-    margin: 0 15px;
-    color: rgb(185, 185, 185);
-    text-decoration: none;
-    transition: all 0.3s;
-    animation: rotation 2s;
-  }
-
-  
-  .social-media a:hover {
-    color: rgb(255, 255, 255);
-    transform: translateY(-5px);
-  }
-  
-  
